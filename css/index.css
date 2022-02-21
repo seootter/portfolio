@@ -1,0 +1,432 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'sansitaOne';
+    src: url('../SansitaOne.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.01em;
+    font-family: 'Noto Sans KR', sans-serif, '나눔고딕', '돋움', '굴림';
+    color: #262626;
+}
+
+html, body {
+    overflow-x: hidden;
+    cursor: default;
+}
+
+ul {
+    list-style: none;
+}
+
+a, button {
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif, '나눔고딕', '돋움', '굴림';
+    color: #262626;
+    cursor: pointer;
+}
+
+h1, h1 span {
+    font-family: 'sansitaOne', 'Noto Sans KR', sans-serif, '나눔고딕', '돋움', '굴림';
+}
+
+h2 {
+    font-size: 32px;
+    display: inline-block;
+    padding-bottom: 100px;
+    text-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
+    margin-top: 100px;
+}
+
+/* header */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    max-width: 1440px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    line-height: 60px;
+    padding: 0 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    color: #9080D5;  
+}
+
+.blacktext {
+    color: #262626;
+}
+
+.blacktext:hover, .blacktext:active {
+    color: #9080D5;     
+}
+
+/* section */
+section {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec_about, .sec_web, .sec_etc, .sec_contact, footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+/* home */
+.sec_home {
+    max-width: 1920px;
+    width: 100%;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.home_text {
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    margin-bottom: 6rem;
+    z-index: 9;
+}
+
+.home_text h1 {
+    font-size: 7rem;
+    line-height: 7.5rem;
+    color: #fff;
+}
+
+.home_text h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 300;
+}
+
+/* about */
+.about_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    margin-right: 150px;
+    position: relative;
+}
+
+.image img {
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    z-index: 2;
+}
+
+@keyframes linemove {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(20px);        
+    }
+    100% {
+        transform: translateX(0px);        
+    }
+}
+
+@keyframes linemove2 {
+    0% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(0px);        
+    }
+    100% {
+        transform: translateX(20px);        
+    }
+}
+
+.pinkline {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    z-index: 3;
+    animation: linemove ease 3s infinite;
+}
+
+.purpleline {
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    z-index: 1;
+    animation: linemove2 ease 3s infinite;
+}
+
+.pinkline div {
+    background: #FFC0CF; 
+    border-radius: 21.5px;   
+}
+
+.purpleline div {
+    background: #9080D5;  
+    border-radius: 21.5px;  
+} 
+
+.line1 {
+    margin-bottom: 10px;
+}
+
+.line2 {
+    margin-left: 25px;
+}
+
+.pink_1 {
+    width: 92px;
+    height: 32px;
+}
+
+.pink_2 {
+    width: 131px;
+    height: 32px;
+}
+
+.purple_1 {
+    width: 68px;
+    height: 32px;
+}
+
+.purple_2 {
+    width: 92px;
+    height: 32px;
+}
+
+.text_flex {
+    text-align: left;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.text_flex ul li {
+    padding-bottom: 7px;
+}
+
+.text_flex h2 {
+    flex: 0 0 125px;
+    margin: 0;
+    padding-bottom: 0;
+    text-shadow: none;
+    font-size: 22px;
+    margin-right: 40px;
+}
+
+/* web */
+.web_box {
+    padding-bottom: 300px;
+}
+
+.introduce {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+}
+
+.web_img {
+    margin-right: 155px;
+    position: relative;
+}
+
+.web_img .pc {
+    position: relative;
+    max-width: 582px;
+    z-index: 2;
+}
+
+.web_img .mobile {
+    max-width: 138px;
+    position: absolute;
+    bottom: -10px;
+    left: -55px;
+    z-index: 2;
+}
+
+.shape {
+    position: absolute;
+    z-index: 1;
+}
+
+.shape_1 {
+    top: -52px;
+    left: -348px;
+}
+
+.shape_2 {
+    top: -95px;
+    right: -299px;
+}
+
+.shape_3 {
+    top: -47px;
+    left: -340px;
+}
+
+.ridibook .web_text {
+    order: 1;
+}
+
+.ridibook .web_img {
+    order: 2;
+    margin: 0 0 0 155px;
+}
+
+.ridibook .web_img .mobile {
+    bottom: -10px;
+    left: 490px;
+}
+
+.web_text {
+    max-width: 370px;
+}
+
+.web_text h1 {
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+
+.introduce_text {
+    display: flex;
+    padding-top: 40px;
+}
+
+.introduce_text div {
+    display: flex;
+}
+
+.introduce_text div h3 {
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.contribution {
+    padding-left: 15px;
+}
+
+.reaction {
+    padding-top: 10px;
+}
+
+.btn_box {
+    padding-top: 80px;
+    display: flex;
+}
+
+.btn_box button {
+    line-height: 30px;
+    padding: 0 42px;
+    border-radius: 12.5px;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 15%);
+    font-size: 14px;
+}
+
+.btn_box button:hover, .btn_box button:active {
+    color: #fff;
+    background: #4644A4;
+}
+
+.btn_box a {
+    padding-left: 20px;
+}
+
+/* etc */
+.sec_etc {
+    margin-bottom: 150px;
+}
+
+/* contact */
+.contact_title {
+    position: relative;
+    display: inline-block;
+}
+
+.contact_title h2 {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+}
+
+.circle {
+    width: 43px;
+    height: 43px;
+    background: #DCD4FF;
+    position: absolute;
+    top: -2px;
+    right: -24px;
+    border-radius: 50%;
+}
+
+.contact {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+}
+
+.contact h3 {
+    padding-right: 30px;
+}
+
+.contact p {
+    color: #666;
+}
+
+.email {
+    padding-left: 50px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-top: 200px;
+    position: relative;
+    height: 317px;
+    margin-bottom: 0;
+}
+
+footer p {
+    font-size: 13px;
+    position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    left: 50%;
+    margin-left: -200px;
+}
