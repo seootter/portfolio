@@ -21,6 +21,12 @@ html, body {
     cursor: default;
 }
 
+body {
+    min-width: 930px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 ul {
     list-style: none;
 }
@@ -40,12 +46,15 @@ h2 {
     font-size: 32px;
     display: inline-block;
     padding-bottom: 100px;
-    text-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
+    text-shadow: 1px 1px 4px rgb(0 0 0 / 30%);
     margin-top: 100px;
 }
 
-
 @media screen and (max-width: 768px) {
+    body {
+        min-width: 100%;
+    }
+
     h2 {
         font-size: 27px; 
         padding-bottom: 80px;    
@@ -62,6 +71,7 @@ header {
 nav {
     max-width: 1440px;
     margin: auto;
+    height: 60px;
 }
 
 nav ul {
@@ -90,6 +100,77 @@ nav ul li a:hover, nav ul li a:active {
 
 .blacktext:hover, .blacktext:active {
     color: #9080D5;     
+}
+
+.barbox {
+    width: 50px;
+    height: 50px;
+    text-align: right;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.bi {
+    float: right;
+    color: #262626;
+    font-size: 36px;
+    padding: 0 30px;
+    cursor: pointer;
+
+    display: none;
+}
+
+.bi-x-lg {
+    position: relative;
+    z-index: 11;
+    margin-top: -35px;
+    font-size: 25px;
+}
+
+.bi-list {
+    color: #fff;
+}
+ 
+.nav_bg {
+    background: #fff;
+    height: 48%;
+    width: 133vw;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: -24vw;
+    z-index: 5;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+
+    display: none;
+}
+
+.listopen {
+    margin: 0;
+    background: none;
+}
+
+.listopen ul {
+    margin-top: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.listopen ul li a {
+    color: #262626;
+}
+
+@media screen and (max-width: 535px) {
+    nav ul {
+        display: none;
+    }
+
+    .bi-list {
+        display: block;
+    }
 }
 
 /* section */
@@ -275,7 +356,43 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+    .about_box {
+        flex-direction: column;
+    }
 
+    .image {
+        margin: 0 20px 80px 20px;
+    }
+
+    .image img {
+        width: 88%;
+    }
+
+    .pinkline {
+        left: -3%;
+    }
+
+    .purpleline {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .text_flex ul li {
+        font-size: 14px;
+    }
+
+    .text_flex h2 {
+        font-size: 19px;
+    }
+
+    .pinkline div, .purpleline {
+        height: 30px;
+    }
+
+    .pink_2, .purple_2 {
+        width: 22vw;
+    }
 }
 
 /* web */
@@ -292,10 +409,11 @@ section {
     align-items: center;
     text-align: left;
     justify-content: center;
+    padding: 0px 40px;
 }
 
 .web_img {
-    margin-right: 155px;
+    margin-right: 8vw;
     position: relative;
 }
 
@@ -308,16 +426,20 @@ section {
 
 .web_img .mobile {
     max-width: 138px;
-    width: 100%;
+    width: 25%;
     position: absolute;
-    bottom: -10px;
-    left: -55px;
+    bottom: -6px;
+    left: -12%;
     z-index: 2;
 }
 
 .shape {
     position: absolute;
     z-index: 1;
+}
+
+.shape svg {
+    width: 100%;
 }
 
 .shape_1 {
@@ -341,16 +463,18 @@ section {
 
 .ridibook .web_img {
     order: 2;
-    margin: 0 0 0 155px;
+    margin: 0 0 0 8vw;
 }
 
 .ridibook .web_img .mobile {
-    bottom: -10px;
-    left: 490px;
+    bottom: -6px;
+    left: 84%;
 }
 
 .web_text {
     max-width: 370px;
+    position: relative;
+    z-index: 3;
 }
 
 .web_text h1 {
@@ -409,13 +533,17 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+    .web_box {
+        min-width: 100%;
+    }
+
     .introduce {
         flex-direction: column;
     }
 
     .web_img, .ridibook .web_img {
         margin: 0;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
         text-align: center;
     }
 
@@ -424,13 +552,13 @@ section {
     }
 
     .ridibook .web_img .mobile {
-        bottom: 26px;
-        left: 445px;
+        bottom: 45px;
+        left: 74%;
     }
 
     .web_img .mobile {
-        bottom: 26px;
-        left: -5px;
+        bottom: 45px;
+        left: 0;
     }
 
     .web_text {
@@ -452,13 +580,53 @@ section {
     }
 
     .web_img .mobile {
-        width: 75%;
+        width: 23%;
+    }
+
+    .shape_1 {
+        top: -81px;
+        left: -317px;
+    }
+
+    .shape_3 {
+        top: -95px;
+        left: -340px;
     }
 }
+
+@media screen and (max-width: 535px) {
+    .shape {
+        width: 65%;
+    }
+
+    .shape_1 {
+        top: -160px;
+        left: -93px;
+    }
+
+    .shape_2 {
+        top: -181px;
+        right: -43px;
+    }
+
+    .shape_3 {
+        top: -129px;
+        left: -98px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .web_text h1 {
+        font-size: 55px;
+        padding-bottom: 40px;
+    }
+}
+
 
 @media screen and (max-width: 320px) {
     .btn_box {
         flex-direction: column;
+        align-items: center;
     }
 
     .btn_box button {
@@ -468,6 +636,10 @@ section {
 
     .btn_box a {
         padding-left: 0;
+    }
+
+    .web_text {
+        text-align: center;
     }
 }
 
@@ -484,11 +656,16 @@ section {
     height: 55px;
     border-radius: 13px;
     box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    padding: 0 10px;
+}
+
+.etc_nav ul li {
+    padding: 0 5px;
 }
 
 .etc_nav ul li a {
     line-height: 55px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -512,17 +689,17 @@ section {
 }
 
 .img_wapper {
-    width: 500px;
+    width: 27vw;
     height: 240px;
+    flex: 0 0 27vw;
     overflow: hidden;
     margin-bottom: 30px;
     display: inline-block;
 }
 
 .etc_img {
-    width: 500px;
+    width: 27vw;
     height: 240px;
-    flex: 0 0 500px;
     display: inline-block;
     cursor: pointer;
     border: 1px solid #e6e6e6;
@@ -541,118 +718,119 @@ section {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .img_wapper {
-        width: 350px;
-        height: 210px;
+@media screen and (max-width: 425px) {
+    .etc_nav ul {
         overflow: hidden;
-        margin-bottom: 30px;
-        display: inline-block;
     }
-    
-    .etc_img {
-        width: 350px;
-        height: 210px;
-        flex: 0 0 350px;
-        display: inline-block;
-        cursor: pointer;
-        border: 1px solid #e6e6e6;
+
+    .etc_nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .etc_nav ul li a {
+        font-size: 12px;
+    }
+
+    .introduce_text {
+        justify-content: center;
     }
 }
 
 /* img */
 /* book */
 #bo_1 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/종이여자_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #bo_2 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/감정을읽는시간_흰.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #bo_3 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/여행북_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* editorial */
 #ed_1 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/3단접지_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #ed_2 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/레미_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #ed_3 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/빌미_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #ed_4 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/빅피쉬_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #ed_5 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/내사모_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #ed_6 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/공익광고_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* graphic */
 #gr_1 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/웅크린_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #gr_2 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/달_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #gr_3 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/나룻배_앞.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #gr_4 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/복숭아.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #gr_5 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/뒷모습.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #gr_6 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/밤편지.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* logo */
 #lg_1 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/맛송이면집.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #lg_2 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/mac.jpg") no-repeat top right;
     background-size: cover;
 }
 
 /* web */
 #web_1 {
-    background: url("../images/me.jpg") no-repeat center center;
+    background: url("../images/웹.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -706,8 +884,16 @@ footer {
     text-align: center;
     margin-top: 200px;
     position: relative;
-    height: 317px;
     margin-bottom: 0;
+    overflow-y: hidden;
+}
+
+.elipse {
+    background: url("../images/ellipse.svg") no-repeat top center;
+    background-size: cover;
+    height: 263px;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 footer p {
@@ -715,8 +901,25 @@ footer p {
     position: absolute;
     z-index: 2;
     bottom: 15%;
-    left: 50%;
-    margin-left: -200px;
+    display: block;
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 30vw;
+    }
+
+    .elipse {
+        height: 28vw;
+    }
+
+    footer p {
+        font-size: 1.6vw;
+        bottom: 6vw;
+    }
 }
 
 @media screen and (max-width: 425px) {
