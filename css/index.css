@@ -44,6 +44,14 @@ h2 {
     margin-top: 100px;
 }
 
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 27px; 
+        padding-bottom: 80px;    
+    }
+}
+
 /* header */
 header {
     width: 100%;
@@ -95,6 +103,7 @@ section {
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 150px;
+    padding: 0 25px;
 }
 
 /* home */
@@ -111,13 +120,13 @@ section {
     position: absolute;
     bottom: 0;
     left: 7%;
-    margin-bottom: 6rem;
+    margin-bottom: 7vw;
     z-index: 9;
 }
 
 .home_text h1 {
-    font-size: 7rem;
-    line-height: 7.5rem;
+    font-size: 110px;
+    line-height: 1em;
     color: #fff;
 }
 
@@ -125,6 +134,28 @@ section {
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     font-weight: 300;
+}
+
+@media screen and (max-width: 1223px) {
+    .home_text {
+        margin-bottom: 8vw;
+    }
+
+    .home_text h1 {
+        font-size: 9vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sec_about, .sec_web, .sec_etc, .sec_contact, footer {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .home_text h1 {
+        line-height: 1.2em;
+    }
 }
 
 /* about */
@@ -243,9 +274,17 @@ section {
     margin-right: 40px;
 }
 
+@media screen and (max-width: 768px) {
+
+}
+
 /* web */
 .web_box {
     padding-bottom: 300px;
+}
+
+.last_box {
+    padding-bottom: 0;
 }
 
 .introduce {
@@ -263,11 +302,13 @@ section {
 .web_img .pc {
     position: relative;
     max-width: 582px;
+    width: 100%;
     z-index: 2;
 }
 
 .web_img .mobile {
     max-width: 138px;
+    width: 100%;
     position: absolute;
     bottom: -10px;
     left: -55px;
@@ -346,12 +387,16 @@ section {
 
 .btn_box button {
     line-height: 30px;
-    padding: 0 42px;
+    width: 137px;
+    height: 30px;
+    padding: 0 12px;
     border-radius: 12.5px;
     background: #fff;
     border: none;
     box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 15%);
     font-size: 14px;
+    overflow: hidden;
+    flex: 0 0 137px;
 }
 
 .btn_box button:hover, .btn_box button:active {
@@ -363,9 +408,252 @@ section {
     padding-left: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .introduce {
+        flex-direction: column;
+    }
+
+    .web_img, .ridibook .web_img {
+        margin: 0;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .ridibook .web_img {
+        order: 1;
+    }
+
+    .ridibook .web_img .mobile {
+        bottom: 26px;
+        left: 445px;
+    }
+
+    .web_img .mobile {
+        bottom: 26px;
+        left: -5px;
+    }
+
+    .web_text {
+        max-width: 510px;
+        min-width: 270px;
+        width: 100%;
+    }
+
+    .introduce_text {
+        padding-top: 18px;
+    }
+
+    .btn_box {
+        padding-top: 50px;
+    }
+
+    .web_img .pc {
+        width: 75%;
+    }
+
+    .web_img .mobile {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .btn_box {
+        flex-direction: column;
+    }
+
+    .btn_box button {
+        flex: 0;
+        margin-bottom: 13px;
+    }
+
+    .btn_box a {
+        padding-left: 0;
+    }
+}
+
 /* etc */
 .sec_etc {
+    max-width: 1100px;
     margin-bottom: 150px;
+}
+
+.etc_nav ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    height: 55px;
+    border-radius: 13px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+
+.etc_nav ul li a {
+    line-height: 55px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.etc_nav ul li a:hover, .etc_nav ul li a:active {
+    color: #9080D5;   
+}
+
+.purple_text {
+    color: #4644A4;    
+}
+
+.purple_text:hover, .purple_text:active {
+    color: #4644A4 !important;       
+}
+
+.box_img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 75px;
+}
+
+.img_wapper {
+    width: 500px;
+    height: 240px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.etc_img {
+    width: 500px;
+    height: 240px;
+    flex: 0 0 500px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+}
+
+.etc_img:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+.purple_box {
+    display: flex !important;
+}
+
+.box_img {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .img_wapper {
+        width: 350px;
+        height: 210px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+    
+    .etc_img {
+        width: 350px;
+        height: 210px;
+        flex: 0 0 350px;
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid #e6e6e6;
+    }
+}
+
+/* img */
+/* book */
+#bo_1 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#bo_2 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#bo_3 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* editorial */
+#ed_1 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#ed_2 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#ed_3 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#ed_4 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#ed_5 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#ed_6 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* graphic */
+#gr_1 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#gr_2 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#gr_3 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#gr_4 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#gr_5 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#gr_6 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* logo */
+#lg_1 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#lg_2 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* web */
+#web_1 {
+    background: url("../images/me.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 /* contact */
@@ -429,4 +717,15 @@ footer p {
     bottom: 15%;
     left: 50%;
     margin-left: -200px;
+}
+
+@media screen and (max-width: 425px) {
+    .contact {
+        display: block;
+        margin-left: -48px;
+    }
+
+    .contact div {
+        justify-content: center;
+    }
 }

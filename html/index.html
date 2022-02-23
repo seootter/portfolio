@@ -173,7 +173,7 @@
             </div>
 
             <!-- 토스 -->
-            <div class="web_box">
+            <div class="web_box last_box">
                 <div class="introduce toss">
                     <div class="web_img">
                         <img class="pc" src="../images/토스.png">
@@ -219,15 +219,53 @@
             <h2>ETC DESIGN</h2>
             <div class="etc_nav">
                 <ul>
-                    <li>BOOK</li>
-                    <li>EDITORIAL</li>
-                    <li>GRAPHIC</li>
-                    <li>LOGO</li>
-                    <li>WEB</li>
+                    <li><a href="#" class="purple_text" id="book">BOOK</a></li>
+                    <li><a href="#"><a href="#" id="editorial">EDITORIAL</a></li>
+                    <li><a href="#" id="graphic">GRAPHIC</a></li>
+                    <li><a href="#" id="logo">LOGO</a></li>
+                    <li><a href="#" id="web">WEB</a></li>
                 </ul>
             </div>
             <div class="etcbox">
+                <!-- book -->
+                <div class="box_img purple_box" id="bookbox">
+                    <div class="img_wapper"><div class="etc_img" id="bo_1"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="bo_2"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="bo_3"></div></div>
+                    <div class="img_wapper"></div>
+                </div>
 
+                <!-- editorial -->
+                <div class="box_img" id="editorialbox">
+                    <div class="img_wapper"><div class="etc_img" id="ed_1"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="ed_2"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="ed_3"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="ed_4"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="ed_5"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="ed_6"></div></div>
+                </div>
+
+                <!-- graphic -->
+                <div class="box_img" id="graphicbox">
+                    <div class="img_wapper"><div class="etc_img" id="gr_1"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="gr_2"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="gr_3"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="gr_4"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="gr_5"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="gr_6"></div></div>
+                </div>
+
+                <!-- logo -->
+                <div class="box_img" id="logobox">
+                    <div class="img_wapper"><div class="etc_img" id="lg_1"></div></div>
+                    <div class="img_wapper"><div class="etc_img" id="lg_2"></div></div>
+                </div>
+
+                <!-- web -->
+                <div class="box_img" id="webbox">
+                    <div class="img_wapper"><div class="etc_img" id="web_1"></div></div>
+                    <div class="img_wapper"></div>
+                </div>
             </div>
         </section>
 
@@ -287,12 +325,18 @@
                 }
         });
 
-        $("header").on("mouseenter", function() {
-            $("header").css("visibility", "visible");
-        });
+        /* etc */
+        $(".etc_nav ul li a").on("click", function(e) {
+            e.preventDefault();
 
-        $("header").on("mouseleave", function() {
-            $("header").css("visibility", "hidden");
+            $(".purple_text").removeClass("purple_text");
+            $(this).addClass("purple_text");
+
+            let id = $(this).attr("id");
+            let imgbox = "#" + (id + "box")
+
+            $(".purple_box").removeClass("purple_box");
+            $(imgbox).addClass("purple_box");
         });
 
         $("nav ul li a").on("click", function() {
