@@ -135,13 +135,13 @@ nav ul li a:hover, nav ul li a:active {
  
 .nav_bg {
     background: #fff;
-    height: 48%;
+    height: 54%;
     width: 133vw;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     position: fixed;
     top: 0;
-    left: -24vw;
+    left: -17vw;
     z-index: 5;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
 
@@ -154,9 +154,14 @@ nav ul li a:hover, nav ul li a:active {
 }
 
 .listopen ul {
-    margin-top: 50px;
+    margin-top: 60px;
     position: relative;
     z-index: 10;
+}
+
+.listopen ul li {
+    padding: 0 125px;
+    text-align: center;
 }
 
 .listopen ul li a {
@@ -244,6 +249,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about_text {
+    max-width: 500px;
 }
 
 .image {
@@ -353,6 +362,42 @@ section {
     text-shadow: none;
     font-size: 22px;
     margin-right: 40px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    position: relative;
+}
+
+.percent {
+    position: absolute;
+    top: 22%;
+    left: 36%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4644A4;
+
+    display: none;
+}
+
+.skills ul li:hover {
+    opacity: 1;
+}
+
+.skills_text {
+    font-size: 14px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
@@ -931,4 +976,18 @@ footer p {
     .contact div {
         justify-content: center;
     }
+}
+
+/* click_div */
+.bg { /* 팝업창 배경 */
+    position: fixed;
+    background: #262626;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 15;
+
+    display: none;
 }

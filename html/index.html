@@ -103,9 +103,12 @@
                 <div class="text_flex skills">
                     <h2>SKILLS</h2>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
+                        <li><span class="percent">90%</span><span class="skills_img"><img src="../images/skills_90.svg"></span><span class="skills_text">HTML/CSS</span></li>
+                        <li><span class="percent">80%</span><span class="skills_img"><img src="../images/skills_80.svg"></span><span class="skills_text">Js/Jquery</span></li>
+                        <li><span class="percent">90%</span><span class="skills_img"><img src="../images/skills_90.svg"></span><span class="skills_text">Ps</span></li>
+                        <li><span class="percent">80%</span><span class="skills_img"><img src="../images/skills_80.svg"></span><span class="skills_text">Ai</span></li>
+                        <li><span class="percent">70%</span><span class="skills_img"><img src="../images/skills_70.svg"></span><span class="skills_text">Id</span></li>
+                        <li><span class="percent">90%</span><span class="skills_img"><img src="../images/skills_90.svg"></span><span class="skills_text">PPT</span></li>
                     </ul>
                 </div>
             </div>
@@ -322,12 +325,18 @@
         </p>
     </footer>
 
+    <!-- click_div -->
+    <div class="bg"></div>
+    <div class="click_etc">
+        <img src="">
+    </div>
+
+    <!-- script -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
     $(window).on("scroll", function () {
             let windowScroll = $(window).scrollTop();
-
             let about = $(".sec_about").offset().top;
 
             if (windowScroll >= 0 && windowScroll < about) {
@@ -339,25 +348,83 @@ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="ano
                 $("nav ul li a").addClass("blacktext");
                 $(".bi-list").css("color", "#262626");
             }
+
+            if($(".nav_bg").css("display") == "block") {
+                $("header").css("background", "none").css("backdropFilter", "none").css("boxShadow", "none");
+            }
     });
+
+    $(window).resize(function() {
+            let width = $(window).width();
+
+            if(width > 535) {
+                $("nav").removeClass("listopen");
+                $("nav ul").css("display", "flex");
+                $(".nav_bg").css("display", "none");
+                $(".bi").css("display", "none");
+            } else {
+
+                if ($(".bi-list").css("display") == "block") {
+                    $("nav ul").css("display", "none");  
+                } else if ($(".bi-x-lg").css("display") == "block") {
+                    $("nav ul").css("display", "block");  
+                } else {
+                    $("nav ul").css("display", "none");
+                    $(".bi-list").css("display", "block");
+                }
+            }
+        });
 
     /* nav */
     $(".bi-list").on("click", function() {
+        let width = $(window).width();
+
+        if(width > 535) {
+            $("nav ul").css("display", "flex"); 
+        } else {
+            $("nav ul").css("display", "block"); 
+        }
+
+        $("header").css("background", "none").css("backdropFilter", "none").css("boxShadow", "none");
         $(".bi-list").css("display", "none");
         $(".bi-x-lg").css("display", "block");
-        $("nav ul").css("display", "block"); 
         $(".nav_bg").css("display", "block"); 
         $("nav").addClass("listopen");   
     });
 
     $(".bi-x-lg").on("click", function() {
+        let windowScroll = $(window).scrollTop();
+        let about = $(".sec_about").offset().top;
+
         $(".bi-x-lg").css("display", "none");
         $(".bi-list").css("display", "block");
         $("nav ul").css("display", "none");   
         $(".nav_bg").css("display", "none");   
-        $("nav").removeClass("listopen");       
+        $("nav").removeClass("listopen");
+
+        if (windowScroll >= 0 && windowScroll < about) {
+            $("header").css("background", "none").css("backdropFilter", "none").css("boxShadow", "none");
+        } else if (windowScroll >= about) {
+                $("header").css("backgroundColor", "rgba(255, 255, 255, 0.2)").css("backdropFilter", "blur(10px)").css("boxShadow", "0px 1px 6px 0px rgb(0 0 0 / 15%)");
+            }
     });
 
+    /* about */
+    $(".skills ul li").on("mouseover", function() {
+        let skills = $(this).children(".percent");
+        $(skills).css("display", "block");
+    });
+
+    $(".skills ul li").on("mouseout", function() {
+        let skills = $(this).children(".percent");
+        $(skills).css("display", "none");
+    });
+
+    $(".skills ul li").on("click", function() {
+
+    });
+
+    /* web */
 
     /* etc */
     $(".etc_nav ul li a").on("click", function(e) {
