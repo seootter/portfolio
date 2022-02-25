@@ -25,6 +25,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -103,13 +104,12 @@
                 <div class="text_flex skills">
                     <h2>SKILLS</h2>
                     <ul>
-                        <li><span class="percent">90%</span><span class="skills_img"><img src="../images/skills_90.svg"></span><span class="skills_text">HTML/CSS</span></li>
-                        <li><span class="percent">80%</span><span class="skills_img"><img src="../images/skills_80.svg"></span><span class="skills_text">Js/Jquery</span></li>
-                        <li><span class="percent">90%</span><span class="skills_img"><img src="../images/skills_90.svg"></span><span class="skills_text">Ps</span></li>
-                        <li><span class="percent">80%</span><span class="skills_img"><img src="../images/skills_80.svg"></span><span class="skills_text">Ai</span></li>
-                        <li><span class="percent">70%</span><span class="skills_img"><img src="../images/skills_70.svg"></span><span class="skills_text">Id</span></li>
-                        <li><span class="percent">90%</span><span class="skills_img"><img src="../images/skills_90.svg"></span><span class="skills_text">PPT</span></li>
-                    </ul>
+                        <li class="html"><span class="percent">90%</span><span class="skills_img"><img src="../images/skills_90.svg"></span><span class="skills_text">HTML/CSS</span></li>
+                        <li class="js"><span class="percent">80%</span><span class="skills_img"><img src="../images/skills_80.svg"></span><span class="skills_text">Js/Jquery</span></li>
+                        <li class="figma"><span class="percent">80%</span><span class="skills_img"><img src="../images/skills_80.svg"></span><span class="skills_text">figma</span></li>
+                        <li class="ps"><span class="percent">90%</span><span class="skills_img"><img src="../images/skills_90.svg"></span><span class="skills_text">Ps</span></li>
+                        <li class="ai"><span class="percent">80%</span><span class="skills_img"><img src="../images/skills_80.svg"></span><span class="skills_text">Ai</span></li>
+                        <li class="ld"><span class="percent">70%</span><span class="skills_img"><img src="../images/skills_70.svg"></span><span class="skills_text">Id</span></li>                    </ul>
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="btn_box">
-                        <button type="button" class="detail">자세히보기</button>
+                        <button type="button" class="detail" id="espoir_btn">자세히보기</button>
                         <a href="#"><button type="button">웹사이트</button></a>
                     </div>
                 </div>
@@ -191,7 +191,7 @@
                     </div>
                     <p class="reaction">반응형 사이트</p>
                     <div class="btn_box">
-                        <button class="detail" type="button">자세히보기</button>
+                        <button class="detail" id="ridi_btn" type="button">자세히보기</button>
                         <a href="#"><button type="button">웹사이트</button></a>
                     </div>
                 </div>
@@ -232,7 +232,7 @@
                     </div>
                     <p class="reaction">반응형 사이트</p>
                     <div class="btn_box">
-                        <button type="button" class="detail">자세히보기</button>
+                        <button type="button" class="detail" id="toss_btn">자세히보기</button>
                         <a href="#"><button type="button">웹사이트</button></a>
                     </div>
                 </div>
@@ -327,9 +327,39 @@
 
     <!-- click_div -->
     <div class="bg"></div>
-    <div class="click_etc">
-        <img src="">
-    </div>
+    <div class="click" id="click_espoir"><div class="click_espoir_img"></div></div></div>
+    <div class="click" id="click_ridibook"><div class="click_ridibook_img"></div></div>
+    <div class="click" id="click_toss"><div class="click_toss_img"></div></div>
+
+    <!-- etc -->
+    <!-- etc_book -->
+    <div class="click" id="click_bo_1"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_bo_2"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_bo_3"><i class="fa-solid fa-x"></i></div>
+
+    <!-- etc_book -->
+    <div class="click" id="click_ed_1"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_ed_2"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_ed_3"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_ed_4"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_ed_5"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_ed_6"><i class="fa-solid fa-x"></i></div>
+
+    <!-- etc_book -->
+    <div class="click" id="click_gr_1"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_gr_2"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_gr_3"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_gr_4"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_gr_5"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_gr_6"><i class="fa-solid fa-x"></i></div>
+
+    <!-- etc_book -->
+    <div class="click" id="click_lg_1"><i class="fa-solid fa-x"></i></div>
+    <div class="click" id="click_lg_2"><i class="fa-solid fa-x"></i></div>
+
+    <!-- etc_book -->
+    <div class="click" id="click_web_1"><i class="fa-solid fa-x"></i></div>
+
 
     <!-- script -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -405,8 +435,29 @@ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="ano
         if (windowScroll >= 0 && windowScroll < about) {
             $("header").css("background", "none").css("backdropFilter", "none").css("boxShadow", "none");
         } else if (windowScroll >= about) {
-                $("header").css("backgroundColor", "rgba(255, 255, 255, 0.2)").css("backdropFilter", "blur(10px)").css("boxShadow", "0px 1px 6px 0px rgb(0 0 0 / 15%)");
-            }
+             $("header").css("backgroundColor", "rgba(255, 255, 255, 0.2)").css("backdropFilter", "blur(10px)").css("boxShadow", "0px 1px 6px 0px rgb(0 0 0 / 15%)");
+        }
+    });
+
+    $("nav ul li a").on("click", function() {
+        let href = $(this).attr("href");
+        let hreftop = $(href).offset();
+        hreftop = hreftop.top;
+
+        $("html").animate({scrollTop: hreftop}, 600);
+
+        return false;
+    });
+
+    /* click_div */
+    $(".bg").on("click", function() {
+        $(".bg").css("display", "none");
+        $(".click").css("display", "none");
+    });
+
+    $(".click").on("click", function() {
+        $(".bg").css("display", "none");
+        $(".click").css("display", "none");
     });
 
     /* about */
@@ -421,10 +472,39 @@ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="ano
     });
 
     $(".skills ul li").on("click", function() {
+        let skillclass = $(this).attr("class");
 
+        if(skillclass == "ps" || skillclass == "ai" || skillclass == "ld") {
+            let sec_etc = $(".sec_etc").offset();
+            sec_etctop = sec_etc.top;
+
+            $("html").animate({scrollTop: sec_etctop}, 600);
+        }
+
+        if(skillclass == "html") {
+            $(".bg").css("display", "block");
+        } else if(skillclass == "js") {
+            $(".bg").css("display", "block");
+        } else if(skillclass == "figma") {
+            $(".bg").css("display", "block");
+        }
     });
 
     /* web */
+    $(".detail").on("click", function() {
+        let deid = $(this).attr("id");
+
+        if(deid == "espoir_btn") {
+            $("#click_espoir").css("display", "block");
+            $(".bg").css("display", "block");
+        } else if(deid == "ridi_btn") {
+            $("#click_ridibook").css("display", "block");
+            $(".bg").css("display", "block");
+        } else if(deid == "toss_btn") {
+            $("#click_toss").css("display", "block");
+            $(".bg").css("display", "block");
+        }
+    });
 
     /* etc */
     $(".etc_nav ul li a").on("click", function(e) {
@@ -440,15 +520,27 @@ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="ano
         $(imgbox).addClass("purple_box");
     });
 
-    $("nav ul li a").on("click", function() {
-        let href = $(this).attr("href");
-        let hreftop = $(href).offset();
-        hreftop = hreftop.top;
+    $(".etc_img").on("click", function() {
+        $(".bg").css("display", "block");
 
-        $("html").animate({scrollTop: hreftop}, 600);
 
-        return false;
+        /* 수정해야함 */
+        let ida = $(this).attr("id") + "1";
+
+        for(let i=0; i<16; i++) {
+            let listname = $(".listname");
+            let list = listname.eq(i);
+            let listid = list.attr("id");
+
+            if(ida == listid) {
+                $(list).css("display", "block");
+            } else {
+                $(list).css("display", "none");
+            }
+        }
     });
+
+
 </script>
 </body>
 </html>

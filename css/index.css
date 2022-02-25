@@ -46,7 +46,7 @@ h2 {
     font-size: 32px;
     display: inline-block;
     padding-bottom: 100px;
-    text-shadow: 1px 1px 4px rgb(0 0 0 / 30%);
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 30%);
     margin-top: 100px;
 }
 
@@ -393,6 +393,8 @@ section {
 
 .skills ul li:hover {
     opacity: 1;
+    transform: scale(1.05);
+    transition: all ease 0.5s
 }
 
 .skills_text {
@@ -571,6 +573,7 @@ section {
 .btn_box button:hover, .btn_box button:active {
     color: #fff;
     background: #4644A4;
+    transition: all ease 0.5s;
 }
 
 .btn_box a {
@@ -728,7 +731,7 @@ section {
 
 .box_img {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 75px;
 }
@@ -981,13 +984,77 @@ footer p {
 /* click_div */
 .bg { /* 팝업창 배경 */
     position: fixed;
-    background: #262626;
-    opacity: .7;
+    background: rgba(0,0,0,0.8);
+    opacity: .8;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 15;
+    cursor: pointer;
 
     display: none;
 }
+
+.click {
+    max-width: 950px;
+    width: 75%;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 16;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 10%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+
+    display: none;
+}
+
+.click::-webkit-scrollbar {
+    width: 4px;
+}
+
+.click::-webkit-scrollbar-track {
+    background: #E5E5E5;
+}
+
+.click::-webkit-scrollbar-thumb {
+    background: #9D9D9D;
+    border-radius: 10px;
+}
+
+.fa-solid {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 17;
+}
+
+/* click_img */
+.click_espoir_img {
+    background: url("../images/리디북스_메인.png") no-repeat top left;
+    background-size: cover;
+    width: 100%;
+    height: 2510px;
+}
+
+.click_ridibook_img {
+    background: url("../images/리디북스_메인.png") no-repeat top left;
+    background-size: cover;
+    width: 100%;
+    height: 2510px;
+}
+
+.click_toss_img {
+    background: url("../images/리디북스_메인.png") no-repeat top left;
+    background-size: cover;
+    width: 100%;
+    height: 2510px;
+}
+
