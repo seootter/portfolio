@@ -333,32 +333,32 @@
 
     <!-- etc -->
     <!-- etc_book -->
-    <div class="click" id="click_bo_1"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_bo_2"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_bo_3"><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_bo_1"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_bo_2"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_bo_3"></div><i class="fa-solid fa-x"></i></div>
 
-    <!-- etc_book -->
-    <div class="click" id="click_ed_1"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_ed_2"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_ed_3"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_ed_4"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_ed_5"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_ed_6"><i class="fa-solid fa-x"></i></div>
+    <!-- etc_ed -->
+    <div class="click etc_click"><div class="click_img" id="click_ed_1"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_ed_2"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_ed_3"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_ed_4"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_ed_5"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_ed_6"></div><i class="fa-solid fa-x"></i></div>
 
-    <!-- etc_book -->
-    <div class="click" id="click_gr_1"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_gr_2"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_gr_3"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_gr_4"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_gr_5"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_gr_6"><i class="fa-solid fa-x"></i></div>
+    <!-- etc_gr -->
+    <div class="click etc_click"><div class="click_img" id="click_gr_1"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_gr_2"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_gr_3"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_gr_4"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_gr_5"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_gr_6"></div><i class="fa-solid fa-x"></i></div>
 
-    <!-- etc_book -->
-    <div class="click" id="click_lg_1"><i class="fa-solid fa-x"></i></div>
-    <div class="click" id="click_lg_2"><i class="fa-solid fa-x"></i></div>
+    <!-- etc_lg -->
+    <div class="click etc_click"><div class="click_img" id="click_lg_1"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click etc_click"><div class="click_img" id="click_lg_2"></div><i class="fa-solid fa-x"></i></div>
 
-    <!-- etc_book -->
-    <div class="click" id="click_web_1"><i class="fa-solid fa-x"></i></div>
+    <!-- etc_web -->
+    <div class="click etc_click"><div class="click_img" id="click_web_1"></div><i class="fa-solid fa-x"></i></div>
 
 
     <!-- script -->
@@ -366,44 +366,44 @@
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
     $(window).on("scroll", function () {
-            let windowScroll = $(window).scrollTop();
-            let about = $(".sec_about").offset().top;
+        let windowScroll = $(window).scrollTop();
+        let about = $(".sec_about").offset().top;
 
-            if (windowScroll >= 0 && windowScroll < about) {
-                $("header").css("backgroundColor", "transparent").css("backdropFilter", "none").css("boxShadow", "none").css("visibility", "visible");
-                $("nav ul li a").removeClass("blacktext");
-                $(".bi-list").css("color", "#fff");
-            } else if (windowScroll >= about) {
-                $("header").css("backgroundColor", "rgba(255, 255, 255, 0.2)").css("backdropFilter", "blur(10px)").css("boxShadow", "0px 1px 6px 0px rgb(0 0 0 / 15%)");
-                $("nav ul li a").addClass("blacktext");
-                $(".bi-list").css("color", "#262626");
-            }
+        if (windowScroll >= 0 && windowScroll < about) {
+            $("header").css("backgroundColor", "transparent").css("backdropFilter", "none").css("boxShadow", "none").css("visibility", "visible");
+            $("nav ul li a").removeClass("blacktext");
+            $(".bi-list").css("color", "#fff");
+        } else if (windowScroll >= about) {
+            $("header").css("backgroundColor", "rgba(255, 255, 255, 0.2)").css("backdropFilter", "blur(10px)").css("boxShadow", "0px 1px 6px 0px rgb(0 0 0 / 15%)");
+            $("nav ul li a").addClass("blacktext");
+            $(".bi-list").css("color", "#262626");
+        }
 
-            if($(".nav_bg").css("display") == "block") {
-                $("header").css("background", "none").css("backdropFilter", "none").css("boxShadow", "none");
-            }
+        if($(".nav_bg").css("display") == "block") {
+            $("header").css("background", "none").css("backdropFilter", "none").css("boxShadow", "none");
+        }
     });
 
     $(window).resize(function() {
-            let width = $(window).width();
+        let width = $(window).width();
 
-            if(width > 535) {
-                $("nav").removeClass("listopen");
-                $("nav ul").css("display", "flex");
-                $(".nav_bg").css("display", "none");
-                $(".bi").css("display", "none");
+        if(width > 535) {
+            $("nav").removeClass("listopen");
+            $("nav ul").css("display", "flex");
+            $(".nav_bg").css("display", "none");
+            $(".bi").css("display", "none");
+        } else {
+
+            if ($(".bi-list").css("display") == "block") {
+                $("nav ul").css("display", "none");  
+            } else if ($(".bi-x-lg").css("display") == "block") {
+                $("nav ul").css("display", "block");  
             } else {
-
-                if ($(".bi-list").css("display") == "block") {
-                    $("nav ul").css("display", "none");  
-                } else if ($(".bi-x-lg").css("display") == "block") {
-                    $("nav ul").css("display", "block");  
-                } else {
-                    $("nav ul").css("display", "none");
-                    $(".bi-list").css("display", "block");
-                }
+                $("nav ul").css("display", "none");
+                $(".bi-list").css("display", "block");
             }
-        });
+        }
+    });
 
     /* nav */
     $(".bi-list").on("click", function() {
@@ -523,19 +523,17 @@ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="ano
     $(".etc_img").on("click", function() {
         $(".bg").css("display", "block");
 
+        let ida = "click_" + $(this).attr("id");
 
-        /* 수정해야함 */
-        let ida = $(this).attr("id") + "1";
-
-        for(let i=0; i<16; i++) {
-            let listname = $(".listname");
-            let list = listname.eq(i);
-            let listid = list.attr("id");
+        for(let i=0; i<18; i++) {
+            let etcclick = $(".etc_click");
+            let clicklist = etcclick.eq(i);
+            let listclass = clicklist.children(".click_img");
+            let listid = listclass.attr("id");
 
             if(ida == listid) {
-                $(list).css("display", "block");
-            } else {
-                $(list).css("display", "none");
+                $(clicklist).css("display", "block");
+                $(listclass).css("display", "block");
             }
         }
     });
