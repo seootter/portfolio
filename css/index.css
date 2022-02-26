@@ -1037,15 +1037,23 @@ footer p {
     height: 9571px !important;
 }
 
+.click_espoir_img {
+    height: 5106px !important;
+}
+
+.click_toss_img {
+    height: 9750px !important;
+}
+
 /* click_img */
 .click_espoir_img {
-    background: url("../images/리디북스_메인.png") no-repeat top left;
+    background: url("../images/에스쁘아_메인.png") no-repeat top left;
 }
 .click_ridibook_img {
     background: url("../images/리디북스_메인.png") no-repeat top left;
 }
 .click_toss_img {
-    background: url("../images/리디북스_메인.png") no-repeat top left;
+    background: url("../images/토스_메인.png") no-repeat top left;
 }
 
 /* etc */
