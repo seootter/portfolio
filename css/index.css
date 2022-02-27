@@ -1016,7 +1016,7 @@ footer p {
 }
 
 .fa-solid {
-    color: #262626;
+    color: #BFBFBF;
     position: absolute;
     top: 30px;
     right: 30px;
@@ -1045,7 +1045,33 @@ footer p {
     height: 9750px !important;
 }
 
+#click_html {
+    height: 2148px !important;
+}
+
+#click_js {
+    height: 1625px !important;
+}
+
+#click_figma {
+    height: 2545px !important;
+}
+
 /* click_img */
+/* skills */
+#click_html {
+    background: url("../images/HTML_메인.jpg") no-repeat top left;
+}
+#click_js {
+    background: url("../images/자바_메인.jpg") no-repeat top left;
+}
+
+#click_figma {
+    background: url("../images/피그마_메인.jpg") no-repeat top left;
+}
+
+
+/* webpage */
 .click_espoir_img {
     background: url("../images/에스쁘아_메인.png") no-repeat top left;
 }

@@ -327,6 +327,13 @@
 
     <!-- click_div -->
     <div class="bg"></div>
+
+    <!-- skills -->
+    <div class="click html_click"><div class="click_img" id="click_html"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click js_click"><div class="click_img" id="click_js"></div><i class="fa-solid fa-x"></i></div>
+    <div class="click figma_click"><div class="click_img" id="click_figma"></div><i class="fa-solid fa-x"></i></div>
+
+    <!-- webpage -->
     <div class="click" id="click_espoir"><div class="click_espoir_img"></div></div></div>
     <div class="click" id="click_ridibook"><div class="click_ridibook_img"></div></div>
     <div class="click" id="click_toss"><div class="click_toss_img"></div></div>
@@ -370,20 +377,27 @@ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="ano
         let about = $(".sec_about").offset().top;
 
         if (windowScroll >= 0 && windowScroll < about) {
-            $("header").css("backgroundColor", "transparent").css("backdropFilter", "none").css("boxShadow", "none").css("visibility", "visible");
+            $("header").css("backgroundColor", "transparent")
+            .css("backdropFilter", "none")
+            .css("boxShadow", "none")
+            .css("visibility", "visible");
             $("nav ul li a").removeClass("blacktext");
             $(".bi-list").css("color", "#fff");
         } else if (windowScroll >= about) {
-            $("header").css("backgroundColor", "rgba(255, 255, 255, 0.2)").css("backdropFilter", "blur(10px)").css("boxShadow", "0px 1px 6px 0px rgb(0 0 0 / 15%)");
+            $("header").css("backgroundColor", "rgba(255, 255, 255, 0.2)")
+            .css("backdropFilter", "blur(10px)")
+            .css("boxShadow", "0px 1px 6px 0px rgb(0 0 0 / 15%)");
             $("nav ul li a").addClass("blacktext");
             $(".bi-list").css("color", "#262626");
         }
 
         if($(".nav_bg").css("display") == "block") {
-            $("header").css("background", "none").css("backdropFilter", "none").css("boxShadow", "none");
+            $("header").css("background", "none")
+            .css("backdropFilter", "none")
+            .css("boxShadow", "none");
         }
     });
-
+    
     $(window).resize(function() {
         let width = $(window).width();
 
@@ -483,10 +497,13 @@ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="ano
 
         if(skillclass == "html") {
             $(".bg").css("display", "block");
+            $(".html_click").css("display", "block");
         } else if(skillclass == "js") {
             $(".bg").css("display", "block");
+            $(".js_click").css("display", "block");
         } else if(skillclass == "figma") {
             $(".bg").css("display", "block");
+            $(".figma_click").css("display", "block");
         }
     });
 
