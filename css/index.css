@@ -789,73 +789,73 @@ section {
 /* img */
 /* book */
 #bo_1 {
-    background: url("../images/종이여자_앞.jpg") no-repeat center center;
+    background: url("../images/paper.jpg") no-repeat center center;
     background-size: cover;
 }
 #bo_2 {
-    background: url("../images/감정을읽는시간_흰.jpg") no-repeat center center;
+    background: url("../images/feeling.jpg") no-repeat center center;
     background-size: cover;
 }
 #bo_3 {
-    background: url("../images/여행북_앞.jpg") no-repeat center center;
+    background: url("../images/travel.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* editorial */
 #ed_1 {
-    background: url("../images/3단접지_앞.jpg") no-repeat center center;
+    background: url("../images/3layers.jpg") no-repeat center center;
     background-size: cover;
 }
 #ed_2 {
-    background: url("../images/레미제라블.jpg") no-repeat center center;
+    background: url("../images/lesmiserables.jpg") no-repeat center center;
     background-size: cover;
 }
 #ed_3 {
-    background: url("../images/빌미_앞.jpg") no-repeat center center;
+    background: url("../images/excuse.jpg") no-repeat center center;
     background-size: cover;
 }
 #ed_4 {
-    background: url("../images/빅피쉬_앞.jpg") no-repeat center center;
+    background: url("../images/bigfish.jpg") no-repeat center center;
     background-size: cover;
 }
 #ed_5 {
-    background: url("../images/내사모_앞.jpg") no-repeat center center;
+    background: url("../images/love.jpg") no-repeat center center;
     background-size: cover;
 }
 #ed_6 {
-    background: url("../images/공익광고_앞.jpg") no-repeat center center;
+    background: url("../images/public.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* graphic */
 #gr_1 {
-    background: url("../images/웅크린_앞.jpg") no-repeat center center;
+    background: url("../images/inner.jpg") no-repeat center center;
     background-size: cover;
 }
 #gr_2 {
-    background: url("../images/달_앞.jpg") no-repeat center center;
+    background: url("../images/moon.jpg") no-repeat center center;
     background-size: cover;
 }
 #gr_3 {
-    background: url("../images/나룻배_앞.jpg") no-repeat center center;
+    background: url("../images/boat.jpg") no-repeat center center;
     background-size: cover;
 }
 #gr_4 {
-    background: url("../images/복숭아.jpg") no-repeat center center;
+    background: url("../images/peach.jpg") no-repeat center center;
     background-size: cover;
 }
 #gr_5 {
-    background: url("../images/뒷모습.jpg") no-repeat center center;
+    background: url("../images/behind.jpg") no-repeat center center;
     background-size: cover;
 }
 #gr_6 {
-    background: url("../images/밤편지.jpg") no-repeat center center;
+    background: url("../images/night.jpg") no-repeat center center;
     background-size: cover;
 }
 
 /* logo */
 #lg_1 {
-    background: url("../images/맛송이면집.jpg") no-repeat center center;
+    background: url("../images/taste.jpg") no-repeat center center;
     background-size: cover;
 }
 #lg_2 {
@@ -865,7 +865,7 @@ section {
 
 /* web */
 #web_1 {
-    background: url("../images/웹.jpg") no-repeat center center;
+    background: url("../images/web.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -1060,89 +1060,89 @@ footer p {
 /* click_img */
 /* skills */
 #click_html {
-    background: url("../images/HTML_메인.jpg") no-repeat top left;
+    background: url("../images/HTML_main.jpg") no-repeat top left;
 }
 #click_js {
-    background: url("../images/자바_메인.jpg") no-repeat top left;
+    background: url("../images/js_main.jpg") no-repeat top left;
 }
 
 #click_figma {
-    background: url("../images/피그마_메인.jpg") no-repeat top left;
+    background: url("../images/figma_main.jpg") no-repeat top left;
 }
 
 
 /* webpage */
 .click_espoir_img {
-    background: url("../images/에스쁘아_메인.png") no-repeat top left;
+    background: url("../images/espoir_main.png") no-repeat top left;
 }
 .click_ridibook_img {
-    background: url("../images/리디북스_메인.png") no-repeat top left;
+    background: url("../images/ridibooks_main.png") no-repeat top left;
 }
 .click_toss_img {
-    background: url("../images/토스_메인.png") no-repeat top left;
+    background: url("../images/toss_main.png") no-repeat top left;
 }
 
 /* etc */
 /* etc_book */
 #click_bo_1 {
-    background: url("../images/종이여자_메인.jpg") no-repeat top left;
+    background: url("../images/paper_main.jpg") no-repeat top left;
 }
 #click_bo_2 {
-    background: url("../images/감정_메인.jpg") no-repeat top left;
+    background: url("../images/feeling_main.jpg") no-repeat top left;
 }
 #click_bo_3 {
-    background: url("../images/여행북_메인.jpg") no-repeat top left;
+    background: url("../images/travel_main.jpg") no-repeat top left;
 }
 
 /* etc_ed */
 #click_ed_1 {
-    background: url("../images/3단접지_메인.jpg") no-repeat top left;
+    background: url("../images/3layers_main.jpg") no-repeat top left;
 }
 #click_ed_2 {
-    background: url("../images/레미제라블_메인.jpg") no-repeat top left;
+    background: url("../images/lesmiserables_main.jpg") no-repeat top left;
 }
 #click_ed_3 {
-    background: url("../images/빌미_메인.jpg") no-repeat top left;
+    background: url("../images/excuse_main.jpg") no-repeat top left;
 }
 #click_ed_4 {
-    background: url("../images/빅피쉬_메인.jpg") no-repeat top left;
+    background: url("../images/bigfish_main.jpg") no-repeat top left;
 }
 #click_ed_5 {
-    background: url("../images/내사모_메인.jpg") no-repeat top left;
+    background: url("../images/love_main.jpg") no-repeat top left;
 }
 #click_ed_6 {
-    background: url("../images/공익광고_메인.jpg") no-repeat top left;
+    background: url("../images/public_main.jpg") no-repeat top left;
 }
 
 /* etc_gr */
 #click_gr_1 {
-    background: url("../images/내면_메인.jpg") no-repeat top left;
+    background: url("../images/inner_main.jpg") no-repeat top left;
 }
 #click_gr_2 {
-    background: url("../images/달_메인.jpg") no-repeat top left;
+    background: url("../images/moon_main.jpg") no-repeat top left;
 }
 #click_gr_3 {
-    background: url("../images/나룻배_메인.jpg") no-repeat top left;
+    background: url("../images/boat_main.jpg") no-repeat top left;
 }
 #click_gr_4 {
-    background: url("../images/복숭아_메인.jpg") no-repeat top left;
+    background: url("../images/peach_main.jpg") no-repeat top left;
 }
 #click_gr_5 {
-    background: url("../images/뒷모습_메인.jpg") no-repeat top left;
+    background: url("../images/behind_main.jpg") no-repeat top left;
 }
 #click_gr_6 {
-    background: url("../images/밤편지_메인.jpg") no-repeat top left;
+    background: url("../images/night_main.jpg") no-repeat top left;
 }
 
 /* etc_lg */
 #click_lg_1 {
-    background: url("../images/맛송송_메인.jpg") no-repeat top left;
+    background: url("../images/taste_main.jpg") no-repeat top left;
 }
 #click_lg_2 {
-    background: url("../images/맥_메인.jpg") no-repeat top left;
+    background: url("../images/mac_main.jpg") no-repeat top left;
 }
 
 /* etc_web */
 #click_web_1 {
-    background: url("../images/웹_메인.jpg") no-repeat top left;
+    background: url("../images/web_main.jpg") no-repeat top left;
 }
