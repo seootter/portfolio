@@ -386,9 +386,7 @@ section {
     left: 36%;
     font-size: 14px;
     font-weight: 500;
-    color: #4644A4;
-
-    display: none;
+    color: rgb(201 201 201);
 }
 
 .skills ul li:hover {
